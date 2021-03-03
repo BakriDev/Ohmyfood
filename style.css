@@ -51,9 +51,7 @@ header{
 }
 
 .Step{
-  padding: 1.5rem;
-  margin: 1rem 0 1rem .75rem;
-  margin-top: 1rem;
+  padding: 1.5rem; 
   box-shadow: .25rem .25rem .5rem rgba(0,0,0,.125);
   border-radius: 1.25rem;
   background-color: #f6f6f6;
@@ -63,6 +61,7 @@ header{
 
 .Restaurant{
   background-color: #f6f6f6;
+  padding: 15px;
 }
 
 .Allcards{
@@ -77,6 +76,8 @@ flex-direction: column;
   border-radius: 1rem;
   position: absolute;
   position: sticky;
+  margin-bottom: 15px;
+  box-shadow: 0px 5px 5px #e6e3e3;
 }
 
 
@@ -87,6 +88,7 @@ flex-direction: column;
   border-radius: 1rem 1rem 0 0;
   box-shadow: none;
   object-fit: cover;
+  height: 10rem;
 
 }
 
@@ -112,3 +114,69 @@ right: .75rem;
   padding: 1rem;
 
 }
+
+.plats p{
+
+  margin:0;
+
+}
+
+ol{
+list-style:none ;
+}
+
+.lignStep{
+
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  margin-bottom: 1rem;
+  position: relative;
+
+}
+
+.puce{
+  
+  background-image: linear-gradient(0deg,rgba(147,86,220,.9),rgba(255,121,218,.9));
+  padding: 2px;
+  border-radius: 100px;
+  position: absolute;
+  height: 1.5rem;
+  width: 1.5rem;
+  text-align: -moz-center;
+  font-size: larger;
+  right:19rem;
+}
+
+.lignStep p{
+  color: white;
+}
+
+
+.footerMain{
+  background-color: rgb(53, 51, 51);
+  padding: 2rem;
+}
+
+footer img{
+  width: 8rem;
+  filter: invert(100%);
+}
+
+.footerContent{
+filter: invert(100%);
+display: flex;
+justify-content: flex-start;
+align-items: center;
+line-height: 0px;
+
+}
+
+.footerIcon{
+  margin-right: 7px;
+}
+
+.footerContent p{
+  margin-bottom: 1rem;
+}
+
