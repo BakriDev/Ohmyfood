@@ -180,3 +180,24 @@ line-height: 0px;
   margin-bottom: 1rem;
 }
 
+
+
+@media screen and (min-width: 768px){
+
+.explanationStep {
+    display: flex;
+    justify-content: space-around;
+}
+
+.puce{
+  right: 13.5rem;
+}
+
+.explainationTitle {
+  display: flex;
+  justify-content: center;
+}
+
+
+
+}
