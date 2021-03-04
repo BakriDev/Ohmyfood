@@ -7,6 +7,17 @@ header{
 }
 
 
+body{
+  font-family: 'roboto'; 
+  
+}
+  
+  
+  a{
+    text-decoration: none;
+  }
+
+
 .Locality{
   display: flex;
   justify-content: center;
@@ -17,9 +28,12 @@ header{
 .logoposition{
   margin-right: 15px;
 
-
-
 }
+
+.explanationTitle {
+  padding-left: 1rem;
+}
+
 .Title{
   text-align: center;
   padding: 2rem;
@@ -64,6 +78,13 @@ header{
   padding: 1rem;
 }
 
+.nameRestaurant {
+  font-size: larger;
+  font-weight: bold;
+}
+
+
+
 .Allcards{
 
 display: flex;
@@ -79,6 +100,7 @@ flex-direction: column;
   margin-bottom: 15px;
   box-shadow: 0px 5px 5px #e6e3e3;
   padding-bottom: 4rem;
+  color: black;
 }
 
 
@@ -214,26 +236,16 @@ animation: apparition 0.8s ease-out;
 
 
 
-
-  .explanationTitle {
-    display: flex;
-    justify-content: center;
-}
-
-
 .explanationStep {
     display: flex;
     justify-content: space-around;
 }
 
 .puce{
-  right: 13.5rem;
+  right: 15rem;
 }
 
-.explainationTitle {
-  display: flex;
-  justify-content: center;
-}
+
 
 .AllcardsResponsive {
   display: flex;
