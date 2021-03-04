@@ -61,7 +61,7 @@ header{
 
 .Restaurant{
   background-color: #f6f6f6;
-  padding: 15px;
+  padding: 1rem;
 }
 
 .Allcards{
@@ -78,6 +78,7 @@ flex-direction: column;
   position: sticky;
   margin-bottom: 15px;
   box-shadow: 0px 5px 5px #e6e3e3;
+  padding-bottom: 4rem;
 }
 
 
@@ -98,8 +99,8 @@ color: #1b6150;
 padding: .5rem;
 border-radius: .125rem;
 position: absolute;
-top: 1rem;
 right: .75rem;
+
 }
 
 .footername{
@@ -181,8 +182,44 @@ line-height: 0px;
 }
 
 
+/* Apparition */
+
+.allMenu{
+animation: apparition 0.8s ease-out;
+
+}
+
+@keyframes apparition{
+  from {
+    opacity: 0;
+    transform: translateY(-100px);
+  }
+  to{
+    opacity: 1;
+    transform: translateY(0px);
+  }
+
+
+}
+
+
+
+
 
 @media screen and (min-width: 768px){
+
+  body{
+    margin: 3rem;
+  }
+
+
+
+
+  .explanationTitle {
+    display: flex;
+    justify-content: center;
+}
+
 
 .explanationStep {
     display: flex;
@@ -198,6 +235,31 @@ line-height: 0px;
   justify-content: center;
 }
 
+.AllcardsResponsive {
+  display: flex;
+  justify-content: space-around;
+}
+
+.card{
+
+  width: 30rem;
+  padding-bottom: 0.5rem;
+}
+
+.badge{
+  bottom: 12rem;
+}
+
+.footerlogo {
+  display: flex;
+  justify-content: center;
+}
+
+.footerParagraphe {
+  display: flex;
+  justify-content: space-around;
+  padding-top: 25px;
+}
 
 
 }

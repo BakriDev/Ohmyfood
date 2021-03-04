@@ -132,3 +132,96 @@ line-height: 0px;
   margin-bottom: 1rem;
 }
 
+
+.allMenu{
+  animation: apparition 1.5s ease-out;
+  
+  }
+  
+  @keyframes apparition{
+    from {
+      opacity: 0;
+      transform: translateY(-100px);
+    }
+    to{
+      opacity: 1;
+      transform: translateY(0px);
+    }
+  
+  
+  }
+
+
+  .plats{
+    animation: apparition 2s ease-in-out;
+    
+    }
+    
+   
+
+
+
+
+
+
+
+
+
+
+    @keyframes apparition{
+      from {
+        opacity: 0;
+        transform: translateY(100px);
+      }
+      to{
+        opacity: 1;
+        transform: translateY(0px);
+      }
+    
+    
+    }
+  
+
+
+
+
+
+
+@media screen and (min-width: 768px){
+
+
+body{
+  margin: 3rem;
+}
+
+.menuContainer img{
+  height: 25rem;
+}
+ 
+.everyMenu{
+
+  display: flex;
+  justify-content: space-around;
+
+}
+
+.allMenu {
+  width: 25rem;
+}
+
+.footerlogo {
+  display: flex;
+  justify-content: center;
+}
+
+.footerParagraphe {
+  display: flex;
+  justify-content: space-around;
+  padding-top: 25px;
+}
+
+
+
+
+
+}
