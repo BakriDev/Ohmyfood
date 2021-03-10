@@ -34,6 +34,13 @@ body{
   padding-left: 1rem;
 }
 
+
+.explanationStep {
+  display: flex;
+  flex-direction: column;
+  margin-left: 1rem;
+}
+
 .Title{
   text-align: center;
   padding: 2rem;
@@ -55,7 +62,6 @@ body{
   background-color: #686868;
   background-image: linear-gradient(0deg,rgba(147,86,220,.9),rgba(255,121,218,.9));
   cursor: pointer;
-  transition-duration: .25s;
   box-shadow: .25rem .25rem 10px rgba(0,0,0,.25);
 }
 
@@ -95,12 +101,10 @@ flex-direction: column;
 .card{
   background-color: #fff;
   border-radius: 1rem;
-  position: absolute;
-  position: sticky;
   margin-bottom: 15px;
   box-shadow: 0px 5px 5px #e6e3e3;
-  padding-bottom: 4rem;
   color: black;
+  position: relative;
 }
 
 
@@ -120,8 +124,9 @@ background-color: #99e2d0;
 color: #1b6150;
 padding: .5rem;
 border-radius: .125rem;
+top: 1rem;
+right: 1rem;
 position: absolute;
-right: .75rem;
 
 }
 
@@ -151,11 +156,13 @@ list-style:none ;
 .lignStep{
 
   display: flex;
-  align-items: center;
-  justify-content: flex-start;
   margin-bottom: 1rem;
   position: relative;
+}
 
+.AllcardsResponsive {
+  display: flex;
+  flex-direction: column;
 }
 
 .puce{
@@ -163,12 +170,12 @@ list-style:none ;
   background-image: linear-gradient(0deg,rgba(147,86,220,.9),rgba(255,121,218,.9));
   padding: 2px;
   border-radius: 100px;
-  position: absolute;
   height: 1.5rem;
   width: 1.5rem;
   text-align: -moz-center;
   font-size: larger;
-  right:19rem;
+  position: absolute;
+  left: -12px;
 }
 
 .lignStep p{
@@ -239,18 +246,21 @@ animation: apparition 0.8s ease-out;
 .explanationStep {
     display: flex;
     justify-content: space-around;
+    flex-direction: row;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
 }
 
-.puce{
-  right: 15rem;
-}
 
 
-
-.AllcardsResponsive {
+.Allcards {
   display: flex;
   justify-content: space-around;
+  flex-flow: wrap;
 }
+
+
+
 
 .card{
 
@@ -258,9 +268,6 @@ animation: apparition 0.8s ease-out;
   padding-bottom: 0.5rem;
 }
 
-.badge{
-  bottom: 12rem;
-}
 
 .footerlogo {
   display: flex;
