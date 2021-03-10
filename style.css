@@ -173,6 +173,7 @@ list-style:none ;
   height: 1.5rem;
   width: 1.5rem;
   text-align: -moz-center;
+  text-align: center;
   font-size: larger;
   position: absolute;
   left: -12px;
