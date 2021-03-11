@@ -1,3 +1,7 @@
+
+
+
+
 header{
   display: flex;
   justify-content: center;
@@ -12,7 +16,59 @@ body{
   
 }
   
+.loader{
+  margin:auto;
+  margin-top: 100px;
+  margin-bottom: 100px;
+  border: 16px solid #bdc3c7;
+  width: 120px;
+  height: 120px;
+  border-top-color: #d5b7d5 ;
+  border-bottom-color: #b7d5b7; 
+  border-radius: 50%;
+  animation: chargeur 4s linear infinite;
   
+
+}  
+
+@keyframes chargeur{
+  
+  0%{
+    transform: rotate(0deg) scale(1);
+    border-top-color:  	#d5d5b7 ;
+    border-bottom-color: #b7d5d5; 
+  }
+
+  25%{
+    border-top-color:  	#CAA4E3 ;
+    border-bottom-color: #b7d5d5; 
+  }
+
+  50%{
+    transform: rotate(360deg) scale(1.10);
+    border-top-color:  	#CAA4E3 ;
+    border-bottom-color: #b7d5d5; 
+  }
+
+  75%{
+    border-top-color:  	#b68500 ;
+    border-bottom-color: #1032f7; 
+  }
+
+  100%{
+    transform: rotate(720deg) scale(1);
+    border-top-color:  	#b68500 ;
+    border-bottom-color: #1032f7; 
+  }
+
+  }
+
+
+
+}
+
+
+
   a{
     text-decoration: none;
   }
@@ -78,6 +134,11 @@ body{
   
 }
 
+.Step:hover{
+  background-color: rgba(147,86,220,.2);
+}
+
+
 
 .Restaurant{
   background-color: #f6f6f6;
@@ -140,6 +201,16 @@ position: absolute;
   justify-content: space-between ;
   align-items: center;
   padding: 1rem;
+
+}
+
+
+.myHeart:hover{
+background-color: #CAA4E3;
+transition-duration: .25s;
+
+}
+
 
 }
 
