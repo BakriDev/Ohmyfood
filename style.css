@@ -78,7 +78,7 @@ body{
   border-top-color: #d5b7d5 ;
   border-bottom-color: #b7d5b7; 
   border-radius: 50%;
-  animation: chargeur 4s linear;
+  animation: chargeur 4s linear forwards;
   position: fixed;
   z-index: 99;
   right: 7rem;
