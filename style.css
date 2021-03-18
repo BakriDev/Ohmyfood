@@ -82,9 +82,11 @@ body{
   position: fixed;
   z-index: 99;
   right: 7rem;
+  top:10rem;
   
-
 }  
+
+
 
 @-webkit-keyframes chargeur{
   
