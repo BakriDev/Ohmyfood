@@ -1,5 +1,7 @@
 
-
+a{
+  text-decoration: none;
+}
 
 
 header{
@@ -16,6 +18,56 @@ body{
   
 }
   
+.loaderBg{
+  background-color: white;
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  z-index: -1;
+  opacity: 0;
+  -webkit-animation:bg 3s;
+  animation: bg 3s;
+
+}
+
+@-webkit-keyframes bg {
+  0% {
+    opacity: 1;
+    z-index: 2;
+  }
+  50% {
+    opacity: 0.8;
+    z-index: 2;
+  }
+  99% {
+    opacity: 0.5;
+    z-index: 2;
+  }
+  100% {
+    opacity: 0;
+    z-index: 0;
+  }
+}
+
+@keyframes bg {
+  0% {
+    opacity: 1;
+    z-index: 2;
+  }
+  50% {
+    opacity: 0.8;
+    z-index: 2;
+  }
+  99% {
+    opacity: 0.5;
+    z-index: 2;
+  }
+  100% {
+    opacity: 0;
+    z-index: 0;
+  }
+}
+
 .loader{
   margin:auto;
   margin-top: 100px;
@@ -26,46 +78,57 @@ body{
   border-top-color: #d5b7d5 ;
   border-bottom-color: #b7d5b7; 
   border-radius: 50%;
-  animation: chargeur 4s linear infinite;
+  animation: chargeur 4s linear;
+  position: fixed;
+  z-index: 99;
+  right: 7rem;
   
 
 }  
 
-@keyframes chargeur{
+@-webkit-keyframes chargeur{
   
   0%{
     transform: rotate(0deg) scale(1);
     border-top-color:  	#d5d5b7 ;
     border-bottom-color: #b7d5d5; 
+    opacity: 1;
   }
 
   25%{
     border-top-color:  	#CAA4E3 ;
     border-bottom-color: #b7d5d5; 
+    opacity: 0.8;
   }
 
   50%{
     transform: rotate(360deg) scale(1.10);
     border-top-color:  	#CAA4E3 ;
     border-bottom-color: #b7d5d5; 
+    opacity: 0.5;
   }
 
   75%{
     border-top-color:  	#b68500 ;
     border-bottom-color: #1032f7; 
+    opacity: 0.3;
   }
 
   100%{
     transform: rotate(720deg) scale(1);
     border-top-color:  	#b68500 ;
     border-bottom-color: #1032f7; 
+    opacity: 0;
   }
 
+
+  
+
   }
 
 
 
-}
+
 
 
 
@@ -131,12 +194,17 @@ body{
   box-shadow: .25rem .25rem .5rem rgba(0,0,0,.125);
   border-radius: 1.25rem;
   background-color: #f6f6f6;
-  
+  width: 17rem;
 }
 
 .Step:hover{
   background-color: rgba(147,86,220,.2);
 }
+
+.Step:hover i{
+  color: purple;
+}
+
 
 
 
@@ -212,7 +280,7 @@ transition-duration: .25s;
 }
 
 
-}
+
 
 .plats p{
 
@@ -285,7 +353,7 @@ line-height: 0px;
 
 /* Apparition */
 
-.allMenu{
+.body{
 animation: apparition 0.8s ease-out;
 
 }
@@ -338,6 +406,11 @@ animation: apparition 0.8s ease-out;
 
   width: 30rem;
   padding-bottom: 0.5rem;
+  width: 40rem;
+}
+
+.cardImg{
+  height: 15rem;
 }
 
 

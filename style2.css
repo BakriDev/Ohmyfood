@@ -102,6 +102,17 @@ cursor: pointer;
   padding: 2rem;
 }
 
+
+#mainImage{
+  background-image: url(./jay-wennington-N_Y88TWmGwA-unsplash.jpg);
+}
+
+
+.allSlide{
+  display: flex;
+}
+
+
 .buttonTitle{
   border:0;
   padding: .75rem 1.5rem;
@@ -174,14 +185,6 @@ line-height: 0px;
    
 
 
-
-
-
-
-
-
-
-
     @keyframes apparition{
       from {
         opacity: 0;
@@ -196,6 +199,21 @@ line-height: 0px;
     }
   
 
+.tickSlide{
+  position: absolute;
+  right:-50px;
+  
+}
+
+.tickSlide:hover{
+animation: slide 2s;
+}
+/*animation tickslide*/
+
+@keyframes slide{
+  from{transform: translateX(-50px);}
+  to{transform: translateX(0px);}
+}
 
 
 
