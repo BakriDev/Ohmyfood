@@ -201,9 +201,32 @@ line-height: 0px;
   
 
 .tickSlide{
+  
+  color: white;
+  font-size: x-large;
+  background-color: #99E2D0;
+  height: 100%;
+  width: 100%;
+  border-radius: 0 1em 1em 0;
   position: relative;
   right: -70px;
-   
+  -webkit-transition: all 500ms ease-out;
+  -o-transition: all 500ms ease-out;
+  transition: all 500ms ease-out;
+}
+
+.circleProp{
+margin: 25px 22px;
+-webkit-transition: all 500ms ease-out;
+-o-transition: all 500ms ease-out;
+transition: all 500ms ease-out;
+-moz-osx-font-smoothing: grayscale;
+-webkit-font-smoothing: antialiased;
+display: inline-block;
+font-style: normal;
+font-variant: normal;
+text-rendering: auto;
+line-height: 1;
 }
 
 
