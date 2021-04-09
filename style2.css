@@ -287,7 +287,28 @@ line-height: 0px;
   display: flex;
   justify-content: center;
   align-items: center;
+  animation: slideLeft 1s;
 }
+
+.tickslide:hover{
+transform: scale(1.1);
+}
+
+@keyframes slideLeft {
+  from{
+    transform: scaleX(0);
+  }
+  to{
+    transform: scaleX();
+  }
+}
+
+.priceFlex {
+  display: flex;
+  align-items: end;
+}
+
+
 
 .circleProp{
 
