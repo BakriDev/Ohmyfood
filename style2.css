@@ -251,14 +251,15 @@ line-height: 0px;
   
   }
 
-
-  .plats{
-    animation: apparition 2s ease-in-out;
-    
-    }
-    
+  .plats:hover .tickSlide {
+    width: 4rem;
+    transition: all 1s;
+}
    
-
+.plats:hover .circleProp {
+  transform: rotate(360deg);
+  transition: all 1s ease-out;
+}
 
     @keyframes apparition{
       from {
@@ -283,20 +284,19 @@ line-height: 0px;
   -webkit-transition: all 500ms ease-out;
   -o-transition: all 500ms ease-out;
   transition: all 500ms ease-out;
-  width: 3rem;
+  width: 0rem;
   display: flex;
   justify-content: center;
   align-items: center;
-  animation: slideLeft 1s;
+  overflow: hidden;
 }
 
-.tickslide:hover{
-transform: scale(1.1);
-}
+
 
 @keyframes slideLeft {
   from{
     transform: scaleX(0);
+    transform-origin: bottom left;
   }
   to{
     transform: scaleX();
