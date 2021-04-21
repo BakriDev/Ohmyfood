@@ -159,7 +159,7 @@ body{
   display: flex;
   justify-content: center;
   padding: 1.25rem 1rem;
-  background-color: #f3f3f3;
+  background-color: #f3f3f34d;
 }
 
 .logoposition{
@@ -176,12 +176,13 @@ body{
   display: flex;
   flex-direction: column;
   margin-left: 1rem;
+  cursor: pointer;
 }
 
 .Title{
   text-align: center;
   padding: 2rem;
-  background-color: #fafafa;
+  background-color: #f2f2f2;
 }
 
 .secondTitle{
@@ -291,16 +292,16 @@ position: absolute;
 }
 
 
+
 .favorite--inactive {
 
   margin: -50px 30px;
-  font-size: 1.5rem;
   position: relative;
   z-index: 1;
   cursor: pointer;
-  right: -38px;
-  top: 3px;
-  
+  right: -29px;
+  top: -9px;
+  font-size: 1.5rem !important;
 }
 
 
@@ -318,13 +319,12 @@ z-index: 1;
 -webkit-transform: scale(1.1);
 -ms-transform: scale(1.1);
     transform: scale(1.1);
-    
-font-size: 1.5rem;
 position: relative;
 z-index: 1;
 cursor: pointer;
 right: 3px;
-top: 3px;
+top: -9px;
+font-size: 1.5rem !important;
 
 }  
 
