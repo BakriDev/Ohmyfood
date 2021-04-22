@@ -18,9 +18,12 @@ body{
 #mainImage {
   height: 15rem;
   object-fit: cover;
-  width: 23rem;
+  
 }
 
+.imageProp{
+  width: 22.5rem;
+}
 
 
 .menuContainer {
@@ -126,6 +129,14 @@ padding: 0 10px;
 
 
 
+.nameMenu{
+      -o-text-overflow: ellipsis;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+  }
+
+
 .menuT{
 border-bottom: 3px solid #99e2d0;
 font-weight: 100;
@@ -156,12 +167,11 @@ justify-content: space-between;
   flex-direction: column;
   order: 3;
   font-weight: bold;
-
+  
 }
 
 .platSubtitle{
  font-size: 0.85rem;
- overflow: auto;
 }
 
 
